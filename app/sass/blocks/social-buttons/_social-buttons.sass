@@ -1,0 +1,18 @@
+.social-button
+  &--header
+    width: 20%
+    +flex-justify(flex-end)
+    @media screen and (max-width: 992px)
+      display: none
+  &__list
+    +flex-flow(row nowrap)
+  &__item
+    padding: 0 5px
+    border-right: 1px solid #aaaaaa
+    &:last-child
+      border-right: 0
+  &__img
+    @each $social-button in facebook, twiter, behance
+      &--#{$social-button}
+        background: url('../img/main-page/social-buttons/#{$social-button}.png') no-repeat
+        padding: 5px 6px

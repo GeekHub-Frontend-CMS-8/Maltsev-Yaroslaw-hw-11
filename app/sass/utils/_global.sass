@@ -1,0 +1,21 @@
+*
+  margin: 0
+  +text-properties($mobile-font-size, $main-font, $main-color, $main-weight)
+  @media screen and (min-width: $media-mobile)
+    font-size: $main-font-size
+li
+  list-style: none
+.wrapper
+  max-width: 1170px
+  margin: 0 auto
+  padding: 0 5px
+  overflow: hidden
+  @media screen and (min-width: $media-mobile)
+    max-width: 1170px  
+a
+  text-decoration: none !important
+.img
+  background-size: 100% 100%
+.adaptive-img
+  width: 100%
+  height: auto
