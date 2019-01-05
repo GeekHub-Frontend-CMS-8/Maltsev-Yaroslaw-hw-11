@@ -5,9 +5,19 @@
   cursor: pointer
   border: 2px solid #fff
   background: transparent
-  +text-size-family-color($main-font-size-small, $secondary-font, #ffffff)
+  +text-properties($main-font-size-small, $secondary-font, #ffffff, 600)
+  &:hover
+    transition: 0.3s
+    background: #fff
+    color: $main-color
+  &__list
+    +flex-flow(row nowrap)
   &--dark
-    border: 1px solid #000
+    border: 2px solid $main-color
+    color: $main-color
+    &:hover
+      background: $main-color
+      color: #fff    
   &--tail
     &:after
       content: ''
@@ -16,16 +26,16 @@
       position: absolute
       left: calc(50% - 8px)
       display: block
-      border: 1px solid green
-      //background: url('')
-      //background-size: 100% 100%
-
+      background: url('../img/main-page/Arrow.png') top no-repeat
+  &--about-sect
+    margin-right: 5px
   @media screen and (max-width: 690px)
     margin-top: 20px
     padding: 5px 15px
-    +text-size-family-color($mobile-font-size-small, $secondary-font, #ffffff)
+    font-size: $mobile-font-size-small
     &--tail
       &:after
+        background-size: 100% 100%
         margin-top: 3px
         padding: 15px 4px
         left: calc(50% - 4px)

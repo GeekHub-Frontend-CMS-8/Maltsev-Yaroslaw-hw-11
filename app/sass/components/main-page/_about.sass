@@ -1,0 +1,21 @@
+.about
+  padding: 75px 200px 0 200px
+  background: #e3e3e3
+  &__container
+    &-img
+      padding: 20% 50% 
+      background: url('../img/main-page/about/background.png')
+      background-size: 100% 100%
+
+    &-text
+      padding: 60px 75px 50px 70px
+      background: #fff
+      +flex-justify-align-flow(center, center, column nowrap)
+      @media screen and (max-width: 600px)
+        padding: 30px 45px 20px 40px
+  @media screen and (max-width: 900px)
+    padding: 50px calc((100% - 785px)*2)
+  @media screen and (max-width: 850px)
+    padding: 50px 40px
+  @media screen and (max-width: 600px)
+    padding: 50px 0   

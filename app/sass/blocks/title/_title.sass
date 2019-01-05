@@ -1,6 +1,21 @@
 .title
+  +text-size-family-color($title-font-size,$main-font, $main-color)
+  text-transform: uppercase
+  &:after
+    border: 1px solid $main-color
+    display: block
+    content: ''
+    margin-top: 25px
+    margin-bottom: 40px
+    width: 100%
+    padding: 2px
+    background: url('')
+    background-size: 100% 100%  
   &-desc
-    +text-size-family-color($main-font-size-small, $title-font, #fff)
+    +text-size-family-color($main-font-size, $title-font, $main-color)
+    &--light
+      color: #fff
+
   &--page
     padding: 25px 15px
     text-align: center
@@ -10,11 +25,23 @@
       border: 1px solid #fff
       display: block
       content: ''
-      margin-top: 35px
+      margin-top: 25px
+      margin-bottom: 40px
+      width: 100%
+      padding: 2px      
+      background: url('')
+      background-size: 100% 100%
+  &--light-dashes
+    &:after
+      border: 1px solid #fff
+      display: block
+      content: ''
+      margin-top: 25px
+      margin-bottom: 40px
       width: 100%
       padding: 2px
       background: url('')
-      background-size: 100% 100%
+      background-size: 100% 100%   
   &--main-page
     &:before
       border: 1px solid #fff
@@ -27,32 +54,38 @@
       background-size: 100% 100%
   @media screen and (max-width: 900px)
     &-desc
-      +text-size-family-color($mobile-font-size, $title-font, #fff)
+      font-size: $mobile-font-size
     &--page
       padding: 5px 10px
       &:after
         margin-top: 20px
+        margin-bottom: 20px
     &--main-page
       &:before
         margin-bottom: 20px
   @media screen and (max-width: 690px)
-    &-desc
-      +text-size-family-color($mobile-font-size, $title-font, #fff)
     &--page
       padding: 5px 10px
       &:after
         margin-top: 20px
+        margin-bottom: 20px
     &--main-page
       &:before
         margin-bottom: 20px
-  @media screen and (max-width: 510px)
+    &:after
+      margin-bottom: 20px
+  @media screen and (max-width: 570px)
     &-desc
-      +text-size-family-color($mobile-font-size-small, $title-font, #fff)
+      &--main
+        font-size: $mobile-font-size-small
     &--page
       padding: 0px 10px
-      +text-size-family-color(20px, $main-font, #fff)
+      font-size: 20px
       &:after
-        margin-top: 10px
+        margin-top: 5px
+        margin-bottom: 0px
     &--main-page
       &:before
-        margin-bottom: 10px
+        margin-bottom: 5px
+    &:after
+      margin-bottom: 5px    
