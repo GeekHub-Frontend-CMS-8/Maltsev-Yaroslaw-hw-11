@@ -1,0 +1,58 @@
+.title
+  &-desc
+    +text-size-family-color($main-font-size-small, $title-font, #fff)
+  &--page
+    padding: 25px 15px
+    text-align: center
+    +text-size-family-color(36px, $main-font, #fff)
+    text-transform: uppercase
+    &:after
+      border: 1px solid #fff
+      display: block
+      content: ''
+      margin-top: 35px
+      width: 100%
+      padding: 2px
+      background: url('')
+      background-size: 100% 100%
+  &--main-page
+    &:before
+      border: 1px solid #fff
+      display: block
+      content: ''
+      margin-bottom: 35px
+      width: 100%
+      padding: 2px
+      background: url('')
+      background-size: 100% 100%
+  @media screen and (max-width: 900px)
+    &-desc
+      +text-size-family-color($mobile-font-size, $title-font, #fff)
+    &--page
+      padding: 5px 10px
+      &:after
+        margin-top: 20px
+    &--main-page
+      &:before
+        margin-bottom: 20px
+  @media screen and (max-width: 690px)
+    &-desc
+      +text-size-family-color($mobile-font-size, $title-font, #fff)
+    &--page
+      padding: 5px 10px
+      &:after
+        margin-top: 20px
+    &--main-page
+      &:before
+        margin-bottom: 20px
+  @media screen and (max-width: 510px)
+    &-desc
+      +text-size-family-color($mobile-font-size-small, $title-font, #fff)
+    &--page
+      padding: 0px 10px
+      +text-size-family-color(20px, $main-font, #fff)
+      &:after
+        margin-top: 10px
+    &--main-page
+      &:before
+        margin-bottom: 10px

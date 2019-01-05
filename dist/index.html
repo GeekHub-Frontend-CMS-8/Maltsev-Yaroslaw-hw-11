@@ -2,22 +2,172 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Homework 11</title>	
+	<!--<link rel="stylesheet" href="css/fonts.css">-->
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	
-	<section class="test">
-		<ul class="test__list">
-			<li class="test__list-item">
-				<p class="test__text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, possimus.
-				</p>
-			</li>
-		//=test.html
-		</ul>
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__container">
+				<div class="logo logo--header">
+					<div class="logo__img img"></div>
+					<span class="logo__text">
+						ATLANTIDA
+					</span>
+				</div>
+				<menu class="header__menu menu">
+					<div class="hamburger" id="openMenu">
+						<span class="hamburger__item hamburger__item--top"></span>
+						<span class="hamburger__item hamburger__item--middle"></span>
+						<span class="hamburger__item hamburger__item--bottom"></span>
+					</div>
+					<nav class="menu-list menu__menu-list">
+						<ul class="menu-list__links">
+							<li class="menu-list__item">
+								<a href="#" class="link menu-list__link">
+									Home
+								</a>
+							</li>
+							<li class="menu-list__item">
+								<a href="#" class="link menu-list__link">
+									About
+								</a>
+							</li>
+							<li class="menu-list__item">
+								<a href="#" class="link menu-list__link">
+									Services
+								</a>
+							</li>
+							<li class="menu-list__item">
+								<a href="#" class="link menu-list__link">
+									History
+								</a>
+							</li>
+							<li class="menu-list__item">
+								<a href="#" class="link menu-list__link">
+									Team
+								</a>
+							</li>
+							<li class="menu-list__item">
+								<a href="#" class="link menu-list__link">
+									Portfolio
+								</a>
+							</li>
+							<li class="menu-list__item">
+								<a href="#" class="link menu-list__link">
+									Prices
+								</a>
+							</li>							
+							<li class="menu-list__item">
+								<a href="#" class="link menu-list__link">
+									Blog
+								</a>
+							</li>
+							<li class="menu-list__item">
+								<a href="#" class="link menu-list__link">
+									Contact
+								</a>
+							</li>																				
+						</ul>
+					</nav>
+				</menu>
+				<div class="social-button social-button--header">
+					<ul class="social-button__list">
+						<li class="social-button__item">
+							<div class="img social-button__img--facebook img">
+								
+							</div>
+						</li>
+						<li class="social-button__item">
+							<div class="img social-button__img--facebook img">
+								
+							</div>
+						</li>							
+						<li class="social-button__item">
+							<div class="img social-button__img--facebook img">
+								
+							</div>
+						</li>						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="main">
+		<div class="slider__container">
+
+			<div class="mySlides fade">
+				<div class="img slider__img-main slider__img-main--anchor">
+					
+				</div>
+				<div class="slider__content">
+					<span class="title-desc">
+					  Design Studio and Digital Agency
+					</span>
+					<h1 class="title--page title--main-page">
+						We are Atlantida
+					</h1>
+					<button href="" class="button button--tail">
+						Get started
+					</button>
+				</div>
+			</div>
+			<div class="mySlides fade">
+				<div class="img slider__img-main slider__img-main--test-1">
+					
+				</div>
+				<div class="slider__content">
+					<span class="title-desc">
+					  Design Studio and Digital Agency
+					</span>
+					<h1 class="title--page main-page__title">
+						We are Atlantida
+					</h1>
+					<a href="" class="button button--tail">
+						Get started
+					</a>
+				</div>
+			</div>
+			<div class="mySlides fade">
+				<div class="img slider__img-main slider__img-main--test-2">
+					
+				</div>
+				<div class="slider__content">
+					<span class="title-desc">
+					  Design Studio and Digital Agency
+					</span>
+					<h1 class="title--page main-page__title">
+						We are Atlantida
+					</h1>
+					<a href="" class="button button--tail">
+						Get started
+					</a>
+				</div>
+			</div>
+
+			<div class="slider-button__list">
+				<div class="img slider-button slider-button--prev" onclick="plusSlides(-1)">
+					
+				</div>
+				<div class="slider-button__container--disabled">
+					
+				</div>
+				<div class="img slider-button slider-button--next" onclick="plusSlides(1)">
+					
+				</div>
+			</div>
+		</div>
 	</section>
 
-	<script src="js/common.js"></script>
+
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous">
+</script>
+<script src="js/common.js"></script>
 </body>
 </html>
