@@ -1,0 +1,17 @@
+.clients
+  padding: 80px 0 125px 0
+  &__container
+    +flex-justify-align-flow(center, center, column nowrap)
+    text-align: center
+  &__list
+    margin-top: 55px
+    +flex-justify-align-flow(space-around, center, row wrap)
+    width: 100%
+  &__item
+    margin-top: 20px
+    width: calc(20% - 90px)
+    height: auto
+    @media screen and (max-width: 900px)
+      width: calc(33% - 90px)
+    @media screen and (max-width: 600px)
+      width: calc(50% - 90px)

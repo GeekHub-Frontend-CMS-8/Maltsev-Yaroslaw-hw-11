@@ -1,0 +1,22 @@
+.advertising
+  padding: 35px 0 40px 0
+  background: #2d2d2f
+  &__container
+    +flex-justify-align-flow(center, center, row wrap)
+  &__icon
+    padding: 60px 55px
+    background: url('../img/main-page/advertisement/icon.png') left center no-repeat
+  &__text
+    padding: 0 130px 0 60px
+    width: calc(60% - 60px - 130px)
+    text-align: left
+    @media screen and (max-width: 960px)
+      padding: 0 10px 0 60px
+      width: calc(100% - 110px - 60px - 10px - 2px)
+  &__question
+    +text-size-family-color(16px, $secondary-font, $light-color)
+    font-weight: bold
+  &__desc
+    margin-top: 20px
+    +text-size-family-color(16px, $title-font, #888888)
+    font-style: italic
