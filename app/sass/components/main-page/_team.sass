@@ -1,0 +1,32 @@
+.team
+  padding: 0
+  padding-top: 70px
+  background: url('../img/main-page/background/team.png') no-repeat
+  background-size: 100% 100%
+  &__container
+    +flex-justify-align-flow(center, center, column nowrap)
+    text-align: center
+  &__list
+    padding: 0
+    margin-top: 85px
+    margin-bottom: 70px
+    width: 80%
+    +flex-justify-align-flow(space-around, center, row wrap)
+    margin-top: 55px
+    @media screen and (max-width: 550px)
+      justify-content: center
+  &__item
+    margin-top: 30px
+    width: calc(33% - 30px)
+    z-index: 1
+    @media screen and (max-width: 900px)
+      width: calc(50% - 30px)
+    @media screen and (max-width: 550px)
+      width: 100%
+    &--hovered
+      background: rgba(246, 246, 246, 0.82)
+      // padding: 360px 20px 40px 20px
+      display: none
+  &__portret
+    width: 100%
+    height: auto
