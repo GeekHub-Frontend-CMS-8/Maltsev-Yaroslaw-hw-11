@@ -1,0 +1,8 @@
+.main
+  @each $background in blog, blog-sidebar, post
+    &--#{$background}
+      background: url('../img/main-background/#{$background}.png')
+      background-size: 100% 100%
+  &__container
+    padding: 120px 0
+    +flex-justify-align-flow(center, center, column nowrap)

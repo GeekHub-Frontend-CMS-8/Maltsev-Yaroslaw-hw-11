@@ -1,0 +1,60 @@
+.button
+  display: block
+  margin-top: 45px
+  padding: 15px 25px
+  cursor: pointer
+  border: 2px solid #fff
+  background: transparent
+  +text-size-family-color-weight($main-font-size-small, $secondary-font, #ffffff, 600)
+  &:hover
+    transition: 0.3s
+    background: #fff
+    color: $main-color
+  &__list
+    +flex-flow(row nowrap)
+    .button
+      margin-right: 5px
+      &:last-child
+        margin-right: 0
+  &--dark
+    border: 2px solid $main-color
+    color: $main-color
+    &:hover
+      background: $main-color
+      color: #fff
+  &--submit
+    padding: 15px 45px 10px 40px
+    background-color: #464646
+    color: #e3e3e3
+    border: 0
+  &--tail
+    &:after
+      content: ''
+      margin-top: 10px
+      padding: 25px 8px      
+      position: absolute
+      left: calc(50% - 8px)
+      display: block
+      background: url('../img/main-page/Arrow.png') top no-repeat
+  &--about-sect
+    margin-right: 5px
+
+  @media screen and (max-width: 690px)
+    margin-top: 20px
+    padding: 5px 15px
+    font-size: $mobile-font-size-small
+    &--tail
+      &:after
+        background-size: 100% 100%
+        margin-top: 3px
+        padding: 15px 4px
+        left: calc(50% - 4px)
+    &--submit
+      padding: 15px 45px 10px 40px
+      font-size: $main-font-size-small
+  @media screen and (max-width: 510px)
+    margin-top: 10px
+    padding: 5px 15px
+    &--submit
+      padding: 15px 45px 10px 40px
+      font-size: $main-font-size-small    

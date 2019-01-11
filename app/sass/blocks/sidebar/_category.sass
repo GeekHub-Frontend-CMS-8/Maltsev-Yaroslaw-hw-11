@@ -1,0 +1,15 @@
+.category
+  &__list    
+    margin: 0
+    padding: 0
+    +flex-justify-align-flow(flex-start, flex-start, column nowrap)
+  &__item
+    +flex-flow(row wrap)
+    margin-top: 20px
+    padding-bottom: 20px
+    width: 100%
+    border-bottom: 1px solid #b7b7b7
+    &:first-child
+      margin-top: 35px
+    &:last-child
+      border-bottom: 0    

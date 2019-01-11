@@ -1,0 +1,18 @@
+.header
+  background: #fff
+  position: fixed
+  width: 100%
+  top: 0
+  z-index: 3
+  &__container
+    padding: 0
+    +flex-align(center)
+    position: relative
+    a
+      display: block
+  &__menu
+    padding: 0
+    width: 70%
+@media screen and (max-width: 992px)
+  .header
+    padding: 30px 0

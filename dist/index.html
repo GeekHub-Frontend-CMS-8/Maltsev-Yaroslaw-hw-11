@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Homework 11</title>	
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__container">
+				<div class="logo logo--header">
+					<div class="logo__img img"></div>
+					<a href="#top" class="logo__text">
+						ATLANTIDA
+					</a>
+				</div>
+				<menu class="header__menu menu">
+					<div class="hamburger" id="openMenu">
+						<span class="hamburger__item hamburger__item--top"></span>
+						<span class="hamburger__item hamburger__item--middle"></span>
+						<span class="hamburger__item hamburger__item--bottom"></span>
+					</div>
+					<nav class="menu-list menu__menu-list">
+						<ul class="menu-list__links">
+							<a class="menu-list__item" href="#">
+								<span class="link menu-list__link">
+									Home
+								</span>
+							</a>
+							<a class="menu-list__item" href="#about">
+								<span class="link menu-list__link">
+									About
+								</span>
+							</a>
+							<a class="menu-list__item" href="#services">
+								<span class="link menu-list__link">
+									Services
+								</span>
+							</a>
+							<a class="menu-list__item" href="#history">
+								<span class="link menu-list__link">
+									History
+								</span>
+							</a>
+							<a class="menu-list__item" href="#team">
+								<span class="link menu-list__link">
+									Team
+								</span>
+							</a>
+							<a class="menu-list__item" href="#portfolio">
+								<span class="link menu-list__link">
+									Portfolio
+								</span>
+							</a>
+							<a class="menu-list__item" href="#prices">
+								<span class="link menu-list__link">
+									Prices
+								</span>
+							</a>
+
+							<ul class="menu-list__links--hovered" href="#">
+								<a class="menu-list__item menu-list__item--hovered" href="#blog">
+									<span class="link menu-list__link">
+										Blogs
+									</span>
+								</a>
+								<div class="menu-list__item--popup">
+									<a class="menu-list__item" href="blog.html">
+										<span class="link menu-list__link">
+											Blog1
+										</span>
+									</a>
+									<a class="menu-list__item" href="blog-sidebar.html">
+										<span class="link menu-list__link">
+											Blog2
+										</span>
+									</a>
+								</div>
+							</ul>
+
+							<a class="menu-list__item" href="#footer">
+								<span class="link menu-list__link">
+									Contact
+								</span>
+							</a>
+						</ul>
+					</nav>
+				</menu>
+				<div class="social-button social-button--header">
+					<ul class="social-button__list">
+						<li class="social-button__item">
+							<div class="img social-button__img--facebook img">
+								
+							</div>
+						</li>
+						<li class="social-button__item">
+							<div class="img social-button__img--facebook img">
+								
+							</div>
+						</li>							
+						<li class="social-button__item">
+							<div class="img social-button__img--facebook img">
+								
+							</div>
+						</li>						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="main">
+		<div class="slider__container">
+
+			<div class="mySlides fade">
+				<div class="img slider__img-main slider__img-main--anchor">
+					
+				</div>
+				<div class="slider__content">
+					<span class="title-desc title-desc--light title-desc--main">
+						Design Studio and Digital Agency
+					</span>
+					<h1 class="title--page title--main-page">
+						We are Atlantida
+					</h1>
+					<a href="#about" class="button button--tail">
+						Get started
+					</a>
+				</div>
+			</div>
+			<div class="mySlides fade">
+				<div class="img slider__img-main slider__img-main--test-1">
+					
+				</div>
+				<div class="slider__content">
+					<span class="title-desc title-desc--light title-desc--main">
+						Design Studio and Digital Agency
+					</span>
+					<h1 class="title--page title--main-page">
+						We are Atlantida
+					</h1>
+					<button href="" class="button button--tail">
+						Get started
+					</button>
+				</div>
+			</div>
+			<div class="mySlides fade">
+				<div class="img slider__img-main slider__img-main--test-2">
+					
+				</div>
+				<div class="slider__content">
+					<span class="title-desc title-desc--light title-desc--main">
+						Design Studio and Digital Agency
+					</span>
+					<h1 class="title--page title--main-page">
+						We are Atlantida
+					</h1>
+					<button href="" class="button button--tail">
+						Get started
+					</button>
+				</div>
+			</div>
+
+			<div class="slider-button__list">
+				<div class="img slider-button slider-button--prev" onclick="plusSlides(-1)">
+					
+				</div>
+				<div class="slider-button__container--disabled">
+					
+				</div>
+				<div class="img slider-button slider-button--next" onclick="plusSlides(1)">
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about">
+		<div class="about__container-img img" id="about">
+			
+		</div>
+		<div class="about__container-text">
+			<h3 class="title">
+				About us
+			</h3>
+			<p class="title-desc">
+				Donec aliquet, ipsum ut lobortis facilisis, nisi ligula aliquam odio, ut vehicula odio lorem in erat. Quisque quam ipsum, commodo non condimentum a, fermentum id sapien. Pellentesque sit amet sem neque. Maecenas est enim, sollicitudin sit amet nisi vel, mattis efficitur sapien. Nulla lobortis dui in aliquam placerat. Maecenas commodo odio nec neque imperdiet sagittis. Fusce mauris tellus, vulputate id finibus a, rutrum et justo. Vivamus at eros sed justo laoreet mattis vulputate vel magna. Sed quis pulvinar quam, et tempus purus. Fusce et nisi eget dui hendrerit iaculis. Cras volutpat augue tempor viverra tincidunt. Maecenas interdum scelerisque enim. Aenean interdum leo ac lectus gravida, id tincidunt sem finibus. Curabitur ac arcu blandit, tempus leo id, ultrices ante. 
+			</p>
+			<div class="button__list">
+				<a href="#footer" class="button button--dark button--about-sect">
+					Contact us
+				</a>
+				<a href="#portfolio" class="button button--dark">
+					Portfolio
+				</a>					
+			</div>
+		</div>
+		<div class="achievement">
+			<ul class="achievement__list">
+				<li class="achievement__item">
+					<div class="achievement__icon achievement__icon--medal">
+						
+					</div>
+					<p class="achievement__name">
+						AWARDS WINNER
+					</p>
+					<p class="achievement__quentity">
+						54
+					</p>
+				</li>
+
+				<li class="achievement__item">
+					<div class="achievement__icon achievement__icon--checkbox">
+						
+					</div>
+					<p class="achievement__name">
+						JOBS DONE
+					</p>
+					<p class="achievement__quentity">
+						1054
+					</p>
+				</li>				
+
+				<li class="achievement__item">
+					<div class="achievement__icon achievement__icon--baby">
+						
+					</div>
+					<p class="achievement__name">
+						HAPPY CLIENTS
+					</p>
+					<p class="achievement__quentity">
+						120
+					</p>
+				</li>				
+
+				<li class="achievement__item">
+					<div class="achievement__icon achievement__icon--case">
+						
+					</div>
+					<p class="achievement__name">
+						reviews recieved
+					</p>
+					<p class="achievement__quentity">
+						54
+					</p>
+				</li>				
+			</ul>
+		</div>
+	</section>
+
+	<section class="services" id="services">
+		<div class="wrapper">
+			<div class="services__container">
+				<h3 class="title title--light">
+					Services
+				</h3>
+				<p class="title-desc title-desc--light">
+					Donec aliquet, ipsum ut lobortis facilisis, nisi ligula aliquam odio, ut vehicula odio lorem in erat. Quisque quam ipsum, commodo non condimentum a, fermentum id sapien. Pellentesque sit amet sem neque. 
+				</p>
+				<ul class="services__list">
+					<li class="services__item">
+						<div class="img services__icon services__icon--lightbulb">
+							
+						</div>
+						<h5 class="services__name">
+							GRAPHIC DESIGN
+						</h5>
+						<p class="services__desc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+						</p>
+					</li>
+
+					<li class="services__item">
+						<div class="img services__icon services__icon--lightbulb">
+							
+						</div>
+						<h5 class="services__name">
+							WEBSITE DESIGN
+						</h5>
+						<p class="services__desc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+						</p>
+					</li>
+
+					<li class="services__item">
+						<div class="img services__icon services__icon--pc">
+							
+						</div>
+						<h5 class="services__name">
+							SEO & ANALITYCS
+						</h5>
+						<p class="services__desc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+						</p>
+					</li>					
+
+					<li class="services__item">
+						<div class="img services__icon services__icon--seo">
+							
+						</div>
+						<h5 class="services__name">
+							WORDPRESS PROGRAMING
+						</h5>
+						<p class="services__desc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+						</p>
+					</li>														
+				</ul>
+			</div>			
+		</div>
+	</section>
+
+	<section class="history" id="history">
+		<div class="wrapper">
+			<div class="history__container">
+				<h3 class="title">
+					History
+				</h3>
+				<p class="title-desc">
+					Donec aliquet, ipsum ut lobortis facilisis, nisi ligula aliquam odio, ut vehicula odio lorem in erat. Quisque quam ipsum, commodo non condimentum a, fermentum id sapien. Pellentesque sit amet sem neque. 
+				</p>
+
+				<div class="timeline">
+					<ul class="timeline__event-list">
+						<div class="timeline__year-container">
+							<p class="timeline__year">
+								2015
+							</p>
+						</div>
+						<li class="timeline__event-item">
+							<div class="timeline__event-text">
+								<h5 class="timeline__event-name">
+									Donec id lobortis tellus. Maecenas vel dignissim
+								</h5>
+								<p class="timeline__event-date">
+									07 October 2015
+								</p>
+								<p class="timeline__event-desc">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+								</p>
+							</div>
+						</li>						
+
+						<li class="timeline__event-item">
+							<div class="timeline__event-text">
+								<h5 class="timeline__event-name">
+									Donec id lobortis tellus. Maecenas vel dignissim
+								</h5>
+								<p class="timeline__event-date">
+									07 October 2015
+								</p>
+								<p class="timeline__event-desc">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+								</p>
+							</div>
+						</li>							
+
+						<li class="timeline__event-item">
+							<div class="timeline__event-text">
+								<h5 class="timeline__event-name">
+									Donec id lobortis tellus. Maecenas vel dignissim
+								</h5>
+								<p class="timeline__event-date">
+									07 October 2015
+								</p>
+								<p class="timeline__event-desc">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+								</p>
+							</div>
+						</li>						
+
+						<li class="timeline__event-item">
+							<div class="timeline__event-text">
+								<h5 class="timeline__event-name">
+									Donec id lobortis tellus. Maecenas vel dignissim
+								</h5>
+								<p class="timeline__event-date">
+									07 October 2015
+								</p>
+								<p class="timeline__event-desc">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+								</p>
+							</div>
+						</li>						
+
+
+					</ul>
+
+					<ul class="timeline__event-list">
+						<div class="timeline__year-container">
+							<p class="timeline__year">
+								2014
+							</p>
+						</div>
+						<li class="timeline__event-item">
+							<div class="timeline__event-text">
+								<h5 class="timeline__event-name">
+									Donec id lobortis tellus. Maecenas vel dignissim
+								</h5>
+								<p class="timeline__event-date">
+									07 October 2015
+								</p>
+								<p class="timeline__event-desc">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+								</p>
+							</div>
+						</li>						
+
+						<li class="timeline__event-item">
+							<div class="timeline__event-text">
+								<h5 class="timeline__event-name">
+									Donec id lobortis tellus. Maecenas vel dignissim
+								</h5>
+								<p class="timeline__event-date">
+									07 October 2015
+								</p>
+								<p class="timeline__event-desc">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+								</p>
+							</div>
+						</li>							
+
+						<li class="timeline__event-item">
+							<div class="timeline__event-text">
+								<h5 class="timeline__event-name">
+									Donec id lobortis tellus. Maecenas vel dignissim
+								</h5>
+								<p class="timeline__event-date">
+									07 October 2015
+								</p>
+								<p class="timeline__event-desc">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+								</p>
+							</div>
+						</li>						
+
+						<li class="timeline__event-item">
+							<div class="timeline__event-text">
+								<h5 class="timeline__event-name">
+									Donec id lobortis tellus. Maecenas vel dignissim
+								</h5>
+								<p class="timeline__event-date">
+									07 October 2015
+								</p>
+								<p class="timeline__event-desc">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+								</p>
+							</div>
+						</li>						
+
+
+					</ul>
+					<hr class="timeline__line">
+					<div class="timeline__year-container">
+						<div class="timeline__start timeline__year">
+							<div class="timeline__start-img">
+
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="team" id="team">
+		<div class="wrapper">
+			<div class="team__container">
+				<h3 class="title">
+					Our team
+				</h3>
+				<p class="title-desc">
+					Donec aliquet, ipsum ut lobortis facilisis, nisi ligula aliquam odio, ut vehicula odio lorem in erat. Quisque quam ipsum, commodo non condimentum a, fermentum id sapien. Pellentesque sit amet sem neque. 
+				</p>
+				<ul class="team__list">
+					<li class="team__item">
+						<img src="img/main-page/team/jacob.png" alt="" class="team__portret">
+						<div class="team__item--hovered">
+							<h5 class="team__name">
+								James Smith
+							</h5>
+							<p class="team__profession">
+								Developer
+							</p>
+						</div>
+					</li>
+
+					<li class="team__item">
+						<img src="img/main-page/team/maria.png" alt="" class="team__portret">
+						<div class="team__item--hovered">
+							<h5 class="team__name">
+								James Smith
+							</h5>
+							<p class="team__profession">
+								Developer
+							</p>
+						</div>
+					</li>
+
+					<li class="team__item">
+						<img src="img/main-page/team/jilia.png" alt="" class="team__portret">
+						<div class="team__item--hovered">
+							<h5 class="team__name">
+								James Smith
+							</h5>
+							<p class="team__profession">
+								Developer
+							</p>
+						</div>
+					</li>					
+				</ul>
+			</div>			
+		</div>
+	</section>
+
+	<section class="portfolio" id="portfolio">
+		<h3 class="title">
+			Portfolio
+		</h3>
+		<p class="title-desc">
+			Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. 
+		</p>
+
+		<div class="button__list button-group filters-button-group">
+			<button class="button button--dark portfolio-button is-checked" data-filter="*">
+				ALL
+			</button>
+			<button class="button button--dark portfolio-button" data-filter=".website">
+				WEBSITE
+			</button>			
+			<button class="button button--dark portfolio-button" data-filter=".brochures">
+				BROCHURES
+			</button>			
+			<button class="button button--dark portfolio-button" data-filter=".logos">
+				LOGOS
+			</button>	
+		</div>
+
+		<div class="gallery">
+			<ul class="gallery__list">
+				<li class="gallery__item website" data-category="website">
+					<div class="img gallery__img gallery__img--cloud">
+						
+					</div>
+					<div class="img gallery__img gallery__img--bridge">
+						
+					</div>
+				</li>
+
+				<li class="gallery__item brochures website" data-category="brochures">
+					<div class="img gallery__img gallery__img--rock">
+						
+					</div>
+					<div class="img gallery__img gallery__img--women">
+						
+					</div>
+				</li>
+
+				<li class="gallery__item brochures logos" data-category="logos">
+					<div class="img gallery__img gallery__img--bad">
+						
+					</div>
+					<div class="img gallery__img gallery__img--man">
+						
+					</div>
+				</li>
+
+				<li class="gallery__item logos" data-category="logos">
+					<div class="img gallery__img gallery__img--sea">
+						
+					</div>
+					<div class="img gallery__img gallery__img--coffee">
+						
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="prices" id="prices">
+		<div class="wrapper">
+			<div class="prices__container">
+				<h3 class="title">
+					Prices
+				</h3>
+				<p class="title-desc">
+					Donec aliquet, ipsum ut lobortis facilisis, nisi ligula aliquam odio, ut vehicula odio lorem in erat. Quisque quam ipsum, commodo non condimentum a, fermentum id sapien. Pellentesque sit amet sem neque. 
+				</p>
+				<ul class="prices__list">
+					<li class="prices__item">
+						<p class="prices__type">
+							basic
+						</p>
+						<div class="img prices__icon prices__icon--lock">
+							
+						</div>
+						<p class="prices__price">
+							10
+						</p>
+						<div class="prices__features">
+							<span class="prices__features-item">
+								Full Access
+							</span>
+							<span class="prices__features-item">
+								Unlimited Edition
+							</span>
+							<span class="prices__features-item">
+								Full Backup
+							</span>
+							<span class="prices__features-item">
+								Free Tea and Free Mockup
+							</span>
+							<span class="prices__features-item">
+								Several Prices
+							</span>
+						</div>
+						<button class="button button--dark prices__button">
+							Sign Up
+						</button>
+					</li>
+
+					<li class="prices__item">
+						<p class="prices__type">
+							advanced
+						</p>
+						<div class="img prices__icon prices__icon--lock">
+							
+						</div>
+						<p class="prices__price">
+							20
+						</p>
+						<div class="prices__features">
+							<span class="prices__features-item">
+								Full Access
+							</span>
+							<span class="prices__features-item">
+								Unlimited Edition
+							</span>
+							<span class="prices__features-item">
+								Full Backup
+							</span>
+							<span class="prices__features-item">
+								Free Tea and Free Mockup
+							</span>
+							<span class="prices__features-item">
+								Several Prices
+							</span>
+						</div>
+						<button class="button button--dark prices__button">
+							Sign Up
+						</button>
+					</li>					
+
+					<li class="prices__item">
+						<p class="prices__type">
+							pro
+						</p>
+						<div class="img prices__icon prices__icon--lock">
+							
+						</div>
+						<p class="prices__price">
+							30
+						</p>
+						<div class="prices__features">
+							<span class="prices__features-item">
+								Full Access
+							</span>
+							<span class="prices__features-item">
+								Unlimited Edition
+							</span>
+							<span class="prices__features-item">
+								Full Backup
+							</span>
+							<span class="prices__features-item">
+								Free Tea and Free Mockup
+							</span>
+							<span class="prices__features-item">
+								Several Prices
+							</span>
+						</div>
+						<button class="button button--dark prices__button">
+							Sign Up
+						</button>
+					</li>					
+				</ul>
+			</div>			
+		</div>
+	</section>
+
+	<section class="advertising">
+		<div class="wrapper">
+			<div class="advertising__container">
+				<div class="img advertising__icon">
+
+				</div>
+
+				<div class="advertising__text">
+					<p class="advertising__question">
+						Looking for a quality and affordable for your next project ?
+					</p>
+					<p class="advertising__desc">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales finibus sed in dolor. Etiam iaculis, nibh a lobortis egestas, est urna sodales
+					</p>
+				</div>
+				<button class="button">
+					Purchase
+				</button>
+			</div>
+		</div>		
+	</section>
+
+	<section class="blog" id="blog">
+		<h3 class="title">
+			Blog
+		</h3>
+		<p class="title-desc">
+			Donec aliquet, ipsum ut lobortis facilisis, nisi ligula aliquam odio, ut vehicula odio lorem in erat. Quisque quam ipsum, commodo non condimentum a, fermentum id sapien. Pellentesque sit amet sem neque. 
+		</p>
+		<ul class="blog__list">
+			<li class="blog__item">
+				<div class="img blog__img blog__img--waterfall">
+
+				</div>
+
+				<div class="blog__text">
+					<p class="blog__date">
+						14 Aug 2015 / By Admin
+					</p>
+					<hr class="blog__hr">
+					<p class="blog__title">
+						Donec id lobortis tellus Maecenas.
+					</p>
+					<p class="blog__desc">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+					</p>
+				</div>
+			</li>
+
+			<li class="blog__item">
+				<div class="img blog__img blog__img--mountain">
+
+				</div>
+
+				<div class="blog__text">
+					<p class="blog__date">
+						14 Aug 2015 / By Admin
+					</p>
+					<hr class="blog__hr">
+					<p class="blog__title">
+						Donec id lobortis tellus Maecenas.
+					</p>
+					<p class="blog__desc">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+					</p>
+				</div>
+			</li>			
+
+			<li class="blog__item">
+				<div class="blog__text">
+					<p class="blog__date">
+						14 Aug 2015 / By Admin
+					</p>
+					<hr class="blog__hr">
+					<p class="blog__title">
+						Donec id lobortis tellus Maecenas.
+					</p>
+					<p class="blog__desc">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+					</p>
+				</div>
+
+				<div class="img blog__img blog__img--man">
+
+				</div>
+			</li>
+
+			<li class="blog__item">
+				<div class="blog__text">
+					<p class="blog__date">
+						14 Aug 2015 / By Admin
+					</p>
+					<hr class="blog__hr">
+					<p class="blog__title">
+						Donec id lobortis tellus Maecenas.
+					</p>
+					<p class="blog__desc">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+					</p>
+				</div>
+
+				<div class="img blog__img blog__img--sea">
+
+				</div>
+			</li>
+		</ul>
+	</section>
+
+	<section class="clients">
+		<div class="wrapper">
+			<div class="clients__container">
+				<h3 class="title">
+					Clients
+				</h3>
+				<p class="title-desc">
+					Donec aliquet, ipsum ut lobortis facilisis, nisi ligula aliquam odio, ut vehicula odio lorem in erat. Quisque quam ipsum, commodo non condimentum a, fermentum id sapien. Pellentesque sit amet sem neque. 
+				</p>
+				<div class="clients__list">
+					<img src="img/main-page/clients/1.png" alt="" class="clients__item">
+					<img src="img/main-page/clients/2.png" alt="" class="clients__item">
+					<img src="img/main-page/clients/3.png" alt="" class="clients__item">
+					<img src="img/main-page/clients/4.png" alt="" class="clients__item">
+					<img src="img/main-page/clients/5.png" alt="" class="clients__item">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="employees">
+		<div class="slider__container">
+			<div class="mySlides--no-arrows fade">
+				<div class="img slider__img-main slider__img-main--employee">
+					
+				</div>
+				<div class="slider__content">
+					<div class="employees__portret employees__portret--alexandr">
+						
+					</div>
+					<p class="employees__quote">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales finibus sed in dolor. 
+						Etiam iaculis, nibh a lobortis egestas, est urna sodales
+					</p>
+					<span class="employees__name">
+						ALEXANDR PODVALNY
+					</span>
+					<span class="employees__company">
+						Free-PSD-Template.com Company
+					</span>
+				</div>
+			</div>
+
+			<div class="mySlides--no-arrows fade">
+				<div class="img slider__img-main slider__img-main--employee">
+					
+				</div>
+				<div class="slider__content">
+					<div class="employees__portret employees__portret--alexandr">
+						
+					</div>
+					<p class="employees__quote">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales finibus sed in dolor. 
+						Etiam iaculis, nibh a lobortis egestas, est urna sodales
+					</p>
+					<span class="employees__name">
+						ALEXANDR Pupkin
+					</span>
+					<span class="employees__company">
+						Free-PSD-Template.com Company
+					</span>
+				</div>
+			</div>			
+
+			<div class="mySlides--no-arrows fade">
+				<div class="img slider__img-main slider__img-main--employee">
+					
+				</div>
+				<div class="slider__content">
+					<div class="employees__portret employees__portret--alexandr">
+						
+					</div>
+					<p class="employees__quote">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales finibus sed in dolor. 
+						Etiam iaculis, nibh a lobortis egestas, est urna sodales
+					</p>
+					<span class="employees__name">
+						ALEXANDR PODVALNY
+					</span>
+					<span class="employees__company">
+						Free-PSD-Template.com Company
+					</span>
+				</div>
+			</div>			
+		</div>
+		<br>
+
+		<div class="dot__container">
+			<span class="dot" onclick="currentSlideNoArrows(1)"></span> 
+			<span class="dot" onclick="currentSlideNoArrows(2)"></span> 
+			<span class="dot" onclick="currentSlideNoArrows(3)"></span> 
+		</div>
+	</section>
+
+	<section class="map">
+		<!--
+			With Google Maps
+			<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d20309.075323923767!2d30.4721233!3d50.4851493!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1546791407782" frameborder="0" allowfullscreen class="map__item"></iframe>-->
+		</section>
+
+		<footer class="footer" id="footer">
+			<div class="wrapper">
+				<div class="footer__container">					
+					<div class="footer__text">
+						<div class="logo">
+							<div class="logo__img img"></div>
+							<span class="logo__text">
+								ATLANTIDA
+							</span>
+						</div>
+						<p class="footer__desc">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+						</p>
+						<span class="footer__name">
+							ATLANTIDA STUDIO
+						</span>
+						<p class="footer__adress">
+							Steven Bernson, Attorney at Law 
+							1556 Broadway, suite 416 
+							New York, NY, 10120, USA 
+						</p>
+						<p class="footer__email">
+							E-mail: elegantflyers@gmail.com
+						</p>
+						<span class="footer__phone">
+							+84 956 654 972
+						</span>
+						<div class="social-button">
+							<ul class="social-button__list">
+								<li class="social-button__item">
+									<div class="img social-button__img--facebook img">
+
+									</div>
+								</li>
+								<li class="social-button__item">
+									<div class="img social-button__img--facebook img">
+
+									</div>
+								</li>							
+								<li class="social-button__item">
+									<div class="img social-button__img--facebook img">
+
+									</div>
+								</li>						
+							</ul>
+						</div>				
+					</div>
+					<form action="" class="form form--footer">
+						<label for="name"></label>
+						<input type="text" id="name" placeholder="Name*">
+						<label for="phone"></label>
+						<input type="number" id="phone" placeholder="Telephone*">
+						<label for="email"></label>
+						<input type="email" id="email" placeholder="Email*">
+						<label for="site"></label>
+						<input type="text" id="site" placeholder="Website">
+						<textarea name="" id="" cols="30" rows="5" class="textarea--footer" placeholder="Message"></textarea>
+						<button class="button button--submit">
+							Submit
+						</button>
+					</form>
+					<div class="footer__copyright">
+						<p class="footer__copyright-text">
+							Copyright © 2015 Atlantida Theme
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	<script
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous">
+	</script>
+	<script src="js/common.js"></script>
+</body>
+</html>

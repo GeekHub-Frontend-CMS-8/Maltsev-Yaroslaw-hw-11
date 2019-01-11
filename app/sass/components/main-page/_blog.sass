@@ -1,0 +1,52 @@
+.blog
+  padding: 85px 0 0 0
+  +flex-justify-align-flow(center, center, column nowrap)
+  text-align: center
+  &__list
+    margin-top: 80px
+    padding: 0
+    width: 100%
+    +flex-justify-align-flow(center, center, row wrap)
+  &__item
+    +flex-justify-align-flow(center, center, row wrap)
+    width: 50%
+
+    background: #2d2d2f
+    @media screen and (max-width: 1100px)
+      width: 100%
+  &__img
+    padding: 230px 0
+    width: 50%
+    @each $blog-img in waterfall, mountain, man, sea
+      &--#{$blog-img}
+        background: url("../img/main-page/blog/#{$blog-img}.png") no-repeat
+        background-size: 100% 100%
+    @media screen and (max-width: 1100px)
+      padding: 25% 0
+    @media screen and (max-width: 770px)
+      width: 100%
+  &__text
+    padding: 50px 50px 75px 40px
+    width: calc(50% - 50px - 40px)
+    height: 100%
+    text-align: left
+    @media screen and (max-width: 770px)
+      width: 100%
+  &__date
+    +text-size-family-color($main-font-size-small, $title-font, #e3e3e3)
+    font-style: italic
+  &__title
+    margin: 20px 0 40px 0
+    font-family: $secondary-font
+    color: #e3e3e3
+    &:before
+      content: '\003E'
+      margin-right: 2px
+  &__desc
+    color: #949494
+    font-family: $title-font
+  &__hr
+    margin-top: 10px
+    width: 50%
+    height: 0.5px
+    background-color: #565656

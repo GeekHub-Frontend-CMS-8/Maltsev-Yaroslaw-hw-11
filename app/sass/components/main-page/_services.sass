@@ -1,0 +1,36 @@
+.services
+  padding: 70px 0 85px 0
+  background: url('../img/main-page/background/services.png')
+  &__container
+    +flex-justify-align-flow(center, center, column nowrap)
+    text-align: center
+  &__list
+    padding: 0
+    +flex-justify-align-flow(space-around, center, row wrap)
+    margin-top: 50px
+  &__item
+    padding: 40px 35px 45px 35px
+    margin-top: 30px
+    width: calc(25% - 70px - 30px)
+    border: 1px solid #898989
+    @media screen and (max-width: 900px)
+      width: calc(50% - 70px - 30px)
+    @media screen and (max-width: 550px)
+      width: 100%
+  &__name
+    margin-bottom: 30px
+    color: #d8d8d8
+    font-family: $secondary-font
+    text-transform: uppercase
+  &__desc
+    color: #d8d8d8
+    font-family: $title-font
+  &__icon
+    padding: 20px 0
+    width: 50px
+    position: relative
+    top: -50px
+    left: calc(50% - 25px)
+    @each $services-icon in lightbulb, pc, seo, wordpress
+      &--#{$services-icon}
+        background: url('../img/main-page/services/#{$services-icon}.png') center top no-repeat

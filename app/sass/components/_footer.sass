@@ -1,0 +1,42 @@
+.footer
+  padding-top: 55px
+  background: url('../img/main-page/background/footer.png')
+  background-size: 100% 100%
+  &__container
+    +flex-flow(row wrap)
+  &__text
+    +flex-flow(column nowrap)
+    width: 30%
+    @media screen and (max-width: 900px)
+      width: 100%
+  &__desc
+    margin: 50px 0 40px 0
+    color: #949494
+    font-family: $title-font
+  &__name
+    color: #e3e3e3
+    font-family: Montserrat
+    text-transform: uppercase
+  &__adress
+    margin: 30px 0 35px 0
+    color: #949494
+    font-family: $title-font
+  &__email
+    color: #e3e3e3
+    font-family: $secondary-font
+    text-transform: uppercase
+  &__phone
+    margin: 5px 0 40px 0
+    color: #e3e3e3
+    font-family: $secondary-font
+    text-transform: uppercase
+  &__copyright
+    margin-top: 60px
+    padding: 40px 0
+    +flex-align(center)
+    width: 100%
+    border-top: 1px solid #3e3e3e
+    &-text
+      color: #949494
+      font-family: $title-font
+      font-style: italic    

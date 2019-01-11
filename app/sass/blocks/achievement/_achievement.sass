@@ -1,0 +1,44 @@
+.achievement
+  &__list
+    padding: 35px 0 25px 0
+    max-width: 100%
+    +flex-justify-align-flow(center, center, row wrap)
+  &__item
+    //border: 1px solid green
+    padding: 0 100px
+    margin-bottom: 40px
+    +flex-justify-align-flow(center, center, column nowrap)
+    width: calc(25% - 200px - 1px)
+    text-align: center
+    border-right: 1px solid #b0b0b0
+    &:nth-child(n+4)
+      border-right: 0
+    @media screen and (max-width: 1100px)
+      padding: 0 100px
+      width: calc(50% - 200px - 1px)
+      border-right: 1px solid #b0b0b0
+      &:nth-child(2n)
+        border-right: 0      
+    @media screen and (max-width: 750px)
+      padding-top: 20px
+      width: 100%
+      border: 0
+      border-top: 1px solid #b0b0b0
+      &:first-child
+        border: 0
+  &__icon
+    padding: 25px 0px
+    width: 100%
+    //background-size: cover
+    @each $achievement__icon in medal, checkbox, baby, case
+      &--#{$achievement__icon}
+        background: url('../img/main-page/about/achievement/#{$achievement__icon}.png') top center no-repeat
+        // background: $color
+  &__name
+    margin-top: 20px
+    margin-bottom: 30px
+    font-family: $secondary-font
+    text-transform: uppercase
+  &__quentity
+    font-family: $secondary-font
+    font-size: 45px

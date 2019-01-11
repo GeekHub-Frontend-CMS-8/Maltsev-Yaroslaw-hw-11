@@ -1,0 +1,58 @@
+.slider
+  &__container
+   position: relative
+   margin: auto
+  &__content
+    +flex-justify-align-flow(center, center, column nowrap)
+    width: 40%
+    position: absolute
+    bottom: 25%
+    right: 30%
+    left: 30%
+    //border: 1px solid green  
+  &-button
+    cursor: pointer
+    position: absolute
+    top: 50%
+    width: auto
+    padding: 16px
+    margin-top: -22px
+    &__list
+      +flex-flow(row nowrap)
+    &--next
+      right: 10%
+      background: url('../img/main-page/main/next-button.png') left no-repeat
+      background-size: 100% 100%
+    &--prev
+      left: 10%
+      background: url('../img/main-page/main/prev-button.png') right no-repeat
+      background-size: 100% 100%
+  &__img-main
+    padding: 25% 50%
+    @each $slider-img in anchor,test-1,test-2,employee
+      &--#{$slider-img}
+        background: url('../img/main-page/slider-img/#{$slider-img}.png')
+        background-size: 100% 100%
+  @media screen and (max-width: 750px)
+    &__content
+      width: 70%
+      left: 15%
+      right: 35%
+      bottom: 20%
+  @media screen and (max-width: 350px)
+    &-button
+      margin-top: -30px
+      &--next
+        right: 5%
+      &--prev
+        left: 5%
+
+      
+/* Fading animation */
+.fade
+  animation-name: fade
+  animation-duration: 2.5s
+
+@keyframes fade 
+  from {opacity: .4}
+  to {opacity: 1}

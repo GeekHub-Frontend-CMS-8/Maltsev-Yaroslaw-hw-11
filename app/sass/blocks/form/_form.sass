@@ -1,0 +1,28 @@
+.form
+  padding: 70px 0 0 35px
+  +flex-justify-align-flow(space-between, center, row wrap)
+  width: 100%
+  input
+    margin-bottom: 20px
+    width: calc(50% - 25px - 15px)
+    border: 2px solid #464646
+    color: #464646
+    font-family: $title-font
+    @media screen and (max-width: 700px)
+      width: 100%
+  textarea
+    padding: 20px 0 20px 25px
+    width: 100%
+    color: #949494
+    font-family: $title-font
+    font-style: italic
+    border: 2px solid #464646
+    color: #464646
+    font-family: $title-font
+
+  &--footer
+    margin: 0
+    padding: 70px 0 0 0
+    width: calc(70% - 35px)
+    @media screen and (max-width: 700px)
+      width: 100%

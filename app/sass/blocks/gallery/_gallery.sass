@@ -1,0 +1,28 @@
+.gallery  
+  width: 100%
+  &__list
+    margin-top: 65px
+    padding: 0
+    width: 100%
+    +flex-justify-align-flow(center, flex-start, row wrap)
+  &__item
+    margin: 0
+    padding: 0
+    width: 25%
+    @media screen and (max-width: 900px)
+      width: 50%
+    @media screen and (max-width: 600px)
+      width: 100%
+  &__img
+    padding: 340px 50%
+    @each $gallery-img, $height in (cloud, 417px), (bridge, 271px), (rock, 303px), (women, 385px), (bad, 230px), (man, 458px), (sea, 436px), (coffee, 252px)
+      &--#{$gallery-img}
+        padding: $height/2 50%
+        background: url('../img/main-page/portfolio/#{$gallery-img}.png') no-repeat
+        background-size: 100% 100%
+    @media screen and (max-width: 600px)
+      @each $gallery-img, $height in (cloud, 537px), (bridge, 371px), (rock, 546px), (women, 485px), (bad, 377px), (man, 558px), (sea, 536px), (coffee, 352px)
+        &--#{$gallery-img}
+          padding: $height/2 50%
+          background: url('../img/main-page/portfolio/#{$gallery-img}.png') no-repeat
+          background-size: 100% 100%

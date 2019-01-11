@@ -1,0 +1,126 @@
+.dot 
+  cursor: pointer
+  height: 15px
+  width: 15px
+  margin: 0 2px
+  position: relative
+  top: -60px
+  background-color: #9d9d9d
+  border-radius: 50%
+  transition: background-color 0.6s ease
+  &:hover
+    background-color:  #e3e3e3
+  &__container
+    +flex-justify-align-flow(center, center, row nowrap)
+  @media screen and (max-width: 450px)
+    right: 100px
+  @media screen and (max-width: 690px)
+    right: -60px
+  @media screen and (max-width: 820px)
+    top: -40px
+.active
+  background-color:  #e3e3e3
+
+
+.employees
+  &__portret
+    padding: 53px
+    margin-bottom: 55px
+    @each $portret in alexandr
+      &--#{$portret}
+        background: url('../img/main-page/employees/portrets/#{$portret}.png') center no-repeat
+        background-size: 100% 100%
+  &__quote
+    margin-bottom: 70px
+    width: 100%
+    +text-size-family-color(20px, $title-font, #efefef)
+    font-style: italic
+    &:before
+      margin-top: -50px
+      margin-left: -50px
+      position: absolute
+      content: '“'
+      +text-size-family-color(95px, $title-font, #efefef)
+    &:after
+      margin-top: -40px
+      margin-left: 20px
+      position: absolute
+      content: '“'
+      +text-size-family-color(95px, $title-font, #efefef)
+      transform: rotate(180deg)
+  &__name
+    margin-bottom: 20px
+    color: #e3e3e3
+    font-family: $secondary-font
+    text-transform: uppercase
+  &__company
+    color: #efefef
+    font-family: $title-font
+@media screen and (max-width: 1085px)
+  .employees
+    &__portret
+      margin-bottom: 30px
+    &__quote
+      margin-bottom: 40px
+      font-size: 15px
+      &:before
+        margin-top: -40px
+        margin-left: -20px        
+        font-size: 60px
+      &:after
+        margin-top: -40px
+        margin-left: 20px        
+        font-size: 60px
+    &__name
+      margin-bottom: 10px
+@media screen and (max-width: 820px)
+  .employees
+    &__portret
+      margin-bottom: 20px
+      padding: 45px
+    &__quote
+      margin-bottom: 30px
+      font-size: 15px
+      &:before
+        margin-top: -40px
+        margin-left: -20px        
+        font-size: 60px
+      &:after
+        margin-top: -40px
+        margin-left: 20px        
+        font-size: 60px
+    &__name
+      margin-bottom: 10px
+      font-size: 10px
+    &__company
+      font-size: 10px
+@media screen and (max-width: 600px)
+  .employees
+    &__portret
+      margin-bottom: 10px
+    &__quote
+      margin-bottom: 20px
+    &__name
+      margin-bottom: 5px
+@media screen and (max-width: 550px)
+  .employees__portret
+    padding: 30px
+@media screen and (max-width: 470px)
+  .employees
+    &__quote
+      font-size: 12px
+      &:before
+        margin-top: -20px
+        margin-left: -20px        
+        font-size: 40px
+      &:after
+        margin-top: -20px
+        margin-left: 20px        
+        font-size: 40px
+    &__name
+      font-size: 10px
+    &__company
+      font-size: 10px    
+@media screen and (max-width: 420px)
+  .employees__portret
+      display: none   

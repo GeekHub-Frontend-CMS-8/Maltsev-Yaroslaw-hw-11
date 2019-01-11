@@ -1,0 +1,105 @@
+.title
+  +text-size-family-color($title-font-size,$main-font, $main-color)
+  text-transform: uppercase
+  text-align: center
+  &:after
+    border: 1px solid $main-color
+    display: block
+    content: ''
+    margin-top: 25px
+    margin-bottom: 40px
+    width: 100%
+    padding: 2px
+    background: url('')
+    background-size: 100% 100%  
+  &-desc
+    +text-size-family-color($main-font-size, $title-font, $main-color)
+    &--light
+      color: #fff
+    &--main
+      margin: 0
+      padding: 0
+      +flex-justify(center)
+      width: 100%
+      text-align: center
+  &--light
+    color: #fff
+    &:after
+      border: 1px solid #fff
+      display: block
+      content: ''
+      margin-top: 25px
+      margin-bottom: 40px
+      width: 100%
+      padding: 2px
+      background: url('')
+      background-size: 100% 100%     
+  &--page
+    padding: 25px 15px
+    text-align: center
+    +text-size-family-color(36px, $main-font, #fff)
+    text-transform: uppercase
+    &:after
+      border: 1px solid #fff
+      display: block
+      content: ''
+      margin-top: 25px
+      width: 100%
+      padding: 2px      
+      background: url('')
+      background-size: 100% 100%  
+  &--main-page
+    &:before
+      border: 1px solid #fff
+      display: block
+      content: ''
+      margin-bottom: 35px
+      width: 100%
+      padding: 2px
+      background: url('')
+      background-size: 100% 100%
+  &--post
+    margin-top: 40px
+    margin-bottom: 10px
+    +text-size-family-color-weight(16px, $secondary-font, #3e3d3d, 700)
+    text-transform: uppercase
+  @media screen and (max-width: 900px)
+    &-desc
+      font-size: $mobile-font-size
+    &--page
+      padding: 5px 10px
+      &:after
+        margin-top: 20px
+        margin-bottom: 20px
+    &--main-page
+      &:before
+        margin-bottom: 20px
+  @media screen and (max-width: 690px)
+    &--page
+      padding: 5px 10px
+      &:after
+        margin-top: 20px
+        margin-bottom: 20px
+    &--post
+      font-size: 14px
+      font-weight: 600
+    &--main-page
+      &:before
+        margin-bottom: 20px
+    &:after
+      margin-bottom: 20px
+  @media screen and (max-width: 570px)
+    &-desc
+      &--main
+        font-size: $mobile-font-size-small
+    &--page
+      padding: 0px 10px
+      font-size: 20px
+      &:after
+        margin-top: 5px
+        margin-bottom: 0px
+    &--main-page
+      &:before
+        margin-bottom: 5px
+    &:after
+      margin-bottom: 5px    

@@ -1,0 +1,16 @@
+.logo
+  +flex-flow(row nowrap)
+  &:hover
+    cursor: pointer
+  &__img
+    padding: 15px 20px
+    background: url('../../../img/main-page/logo/Icon_Logo.png') right no-repeat
+  &__text
+    margin: 0
+    padding: 0
+    display: flex !important
+    align-items: center
+    +text-size-family-color(18px, $secondary-font, #757575)
+    text-transform: uppercase
+  &--header
+    width: 30%
