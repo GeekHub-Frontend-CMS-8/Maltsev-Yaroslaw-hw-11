@@ -9,7 +9,6 @@
     bottom: 25%
     right: 30%
     left: 30%
-    //text-align: center
     //border: 1px solid green  
   &-button
     cursor: pointer
@@ -30,19 +29,23 @@
       background-size: 100% 100%
   &__img-main
     padding: 25% 50%
-    @each $slider-img in anchor,test-1,test-2
+    @each $slider-img in anchor,test-1,test-2,employee
       &--#{$slider-img}
-        background: url('../img/main-page/main/slider-img/#{$slider-img}.png')
+        background: url('../img/main-page/slider-img/#{$slider-img}.png')
         background-size: 100% 100%
-  @media screen and (max-width: 690px)
+  @media screen and (max-width: 750px)
     &__content
-      width: 50%
-      left: 25%
-      right: 25%
+      width: 70%
+      left: 15%
+      right: 35%
       bottom: 20%
   @media screen and (max-width: 350px)
     &-button
       margin-top: -30px
+      &--next
+        right: 5%
+      &--prev
+        left: 5%
 
       
 /* Fading animation */

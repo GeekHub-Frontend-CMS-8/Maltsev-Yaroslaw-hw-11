@@ -1,4 +1,12 @@
 .social-button
+  +flex-justify(flex-start)
+  width: 100%
+  &--round
+    padding: 15px 0
+    +flex-justify-align(center, center)
+    width: 100%
+    border-top: 1px solid #b7b7b7
+    border-bottom: 1px solid #b7b7b7
   &--header
     width: 20%
     +flex-justify(flex-end)
@@ -11,8 +19,21 @@
     border-right: 1px solid #aaaaaa
     &:last-child
       border-right: 0
+    &--round
+      margin-right: 5px
+      &:last-child
+        margin-right: 0
+
   &__img
+    &:hover
+      cursor: pointer
     @each $social-button in facebook, twiter, behance
       &--#{$social-button}
         background: url('../img/main-page/social-buttons/#{$social-button}.png') no-repeat
         padding: 5px 6px
+      &--round
+        display: block
+        border: 1px solid green
+        &--#{$social-button}
+          background: url('../img/main-page/social-buttons/#{$social-button}.png') center no-repeat
+          padding: 15px

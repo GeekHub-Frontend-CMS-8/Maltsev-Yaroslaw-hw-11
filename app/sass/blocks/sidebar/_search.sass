@@ -1,0 +1,25 @@
+.search
+  &-input
+    width: 45px
+    border: 2px solid transparent  
+    background: transparent
+    &__container
+      width: 10%
+      margin-left: -17px
+      vertical-align: middle
+      white-space: nowrap
+      &:hover
+        cursor: pointer
+        transition: width .55s ease
+        width: 100%
+        .search-input
+          width: 100%
+          border: 2px solid #a8a8a8
+          background: #fff
+        .search-icon
+          left: calc(100% - 15px)
+  &-icon
+    position: relative
+    left: 22px
+    z-index: 1
+    color: #4f5b66

@@ -1,15 +1,26 @@
 *
   margin: 0
-  +text-properties($main-font-size, $main-font, $main-color, $main-weight)
+  +text-size-family-color-weight($main-font-size, $main-font, $main-color, $main-weight)
   @media screen and (max-width: $media-mobile)
     font-size: $mobile-font-size
+html
+  scroll-behavior: smooth
+body
+  padding-top: 60px
+  background: #e3e3e3
+  @media screen and (max-width: 850px)
+    padding-top: 90px
+
 li
   list-style: none
 .wrapper
   max-width: 1170px
   margin: 0 auto
   padding: 0
-  // overflow: hidden
+  overflow: hidden
+  @media screen and (max-width: 700px)
+    padding: 0
+    margin: 0
 a
   text-decoration: none !important
 .img
@@ -18,3 +29,10 @@ a
   width: 100%
   height: auto
   padding: 0
+
+input
+  margin: 0
+  padding: 15px
+  color: #949494
+  font-family: $title-font
+  font-style: italic

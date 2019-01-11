@@ -3,18 +3,18 @@ $hamburger-accent: #58595b
 
 @media screen and (max-width: 992px) 
   .hamburger 
-    position: absolute
+    position: fixed
     top: 10px
     right: 40px
     width: 80px
     height: 60px
     cursor: pointer
-    z-index: 10
+    z-index: 20
     transition: opacity .25s ease
     &__item 
-      position: absolute
+      position: fixed
       top: 18px
-      left: 15px
+      right: 40px
       border: 0
       height: 5px
       width: 50px
@@ -26,38 +26,42 @@ $hamburger-accent: #58595b
         top: 48px
     &.active 
       opacity: 1
-      z-index: 100
+      z-index: 200
       .hamburger__item 
         background: $hamburger-accent
         border: 0
         height: 5px
         width: 55px
         border-radius: 0
+        z-index: 50
         &--top 
           transform: translateY(19px) translateX(-13px) rotate(135deg)
           background: $hamburger-accent
           transition: .35s ease
+          z-index: 50
         &--middle 
           opacity: 0
           background: $hamburger-accent
           height: 10px
           width: 10px
           border-radius: 50%
+          z-index: 50
         &--bottom 
           transform: translateY(-11px) translateX(-13px) rotate(-135deg)
           background: $hamburger-accent
           transition: .35s ease
+          z-index: 50
 @media screen and (max-width: 600px) 
   .hamburger 
-    position: absolute
+    position: fixed
     top: 10px
-    right: 14px
+    right: 40px
     width: 60px
     height: 60px
     &__item 
-      position: absolute
+      position: fixed
       top: 18px
-      left: 15px
+      right: 34px
       height: 3px
       width: 45px
     &.active 

@@ -1,0 +1,129 @@
+.history
+  &__container
+    padding: 60px 0 0 0
+    +flex-justify-align-flow(center, center, column nowrap)
+.timeline
+  +flex-justify-align-flow(center, center, column nowrap)
+  &__line
+    transform: rotate(90deg)
+    background: $main-color
+    border: 0
+    height: 2px
+    width: calc(100% - 100px)
+    position: absolute
+    z-index: -1
+    @media screen and (max-width: 1100px)
+      display: none
+  &__year
+    padding: 5px
+    width: 70px
+    height: 70px
+    +flex-justify-align(center, center)
+    border-radius: 50%
+    border: 2px solid $main-color
+    background: #e4e4e4
+    text-align: center
+    &:hover
+      transition: 0.3s
+      cursor: pointer
+      background: $main-color
+      color: #e4e4e4        
+    &-container
+      width: 100%
+      margin-bottom: 45px
+      +flex-justify(center)  
+  &__event
+    &-list
+      padding: 0
+      margin: 0
+      margin-top: 40px
+      +flex-justify-align-flow(space-between, center, row wrap)
+      width: 100%
+    &-item
+      width: calc(50% - 50px)
+      &:before
+        content: ''
+        display: block
+        margin-top: 15px
+        position: absolute
+        left: calc(50% - 15px/2)
+        width: 15px
+        height: 15px        
+        border-radius: 50%
+        background: $main-color
+      &:nth-child(2n)
+        margin-bottom: 40px
+        &:before
+          content: ''
+          display: block
+          position: absolute
+          right: calc(50% - 15px/2)
+          width: 15px
+          height: 15px        
+          border-radius: 50%
+          background: $main-color  
+        .timeline__event-text:before
+          content: ''
+          display: block
+          position: absolute
+          margin: 0
+          margin-top: -10px
+          left: calc(50% - 58px)
+          width: 9px
+          height: 7px
+          transform: skew(-50deg)
+          background: #e3e3e3
+          border: 2px solid transparent
+          border-top: 2px solid #464646
+          border-right: 2px solid #464646
+      &:hover
+        transition: 0.3s
+        cursor: pointer
+        background: $main-color
+        .timeline__event
+          &-text:before
+            transition: 0.3s
+            background: $main-color
+          &-name
+            transition: 0.3s
+            color: #e4e4e4 
+          &-date
+            transition: 0.3s
+            color: #e4e4e4             
+          &-desc
+            transition: 0.3s
+            color: #e4e4e4    
+    &-text
+      padding: 30px 75px 30px 30px
+      border: 2px solid #464646
+      &:before
+        content: ''
+        display: block
+        position: absolute
+        margin: 0
+        margin-top: -5px
+        left: calc(50% - 55px + 100px)
+        width: 9px
+        height: 7px
+        transform: skew(50deg)
+        background: #e3e3e3
+        border: 2px solid transparent
+        border-top: 2px solid #464646
+        border-left: 2px solid #464646
+    &-name
+      margin-bottom: 10px
+      font-family: $secondary-font
+    &-date
+      margin-bottom: 30px
+      font-family: $secondary-font
+      font-size: 11px
+    &-desc
+      font-family: $title-font
+  &__start
+    width: 50px
+    height: 50px
+    background: $main-color
+    &-img
+      background: url('../img/') center no-repeat
+      padding: 12.5px
+      border: 1px solid blue

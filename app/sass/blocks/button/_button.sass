@@ -5,7 +5,7 @@
   cursor: pointer
   border: 2px solid #fff
   background: transparent
-  +text-properties($main-font-size-small, $secondary-font, #ffffff, 600)
+  +text-size-family-color-weight($main-font-size-small, $secondary-font, #ffffff, 600)
   &:hover
     transition: 0.3s
     background: #fff
@@ -21,7 +21,12 @@
     color: $main-color
     &:hover
       background: $main-color
-      color: #fff    
+      color: #fff
+  &--submit
+    padding: 15px 45px 10px 40px
+    background-color: #464646
+    color: #e3e3e3
+    border: 0
   &--tail
     &:after
       content: ''
@@ -33,6 +38,7 @@
       background: url('../img/main-page/Arrow.png') top no-repeat
   &--about-sect
     margin-right: 5px
+
   @media screen and (max-width: 690px)
     margin-top: 20px
     padding: 5px 15px
@@ -43,6 +49,12 @@
         margin-top: 3px
         padding: 15px 4px
         left: calc(50% - 4px)
+    &--submit
+      padding: 15px 45px 10px 40px
+      font-size: $main-font-size-small
   @media screen and (max-width: 510px)
     margin-top: 10px
     padding: 5px 15px
+    &--submit
+      padding: 15px 45px 10px 40px
+      font-size: $main-font-size-small    

@@ -14,9 +14,14 @@
     background-size: 100% 100%  
   &-desc
     +text-size-family-color($main-font-size, $title-font, $main-color)
-    max-width: 1000px
     &--light
       color: #fff
+    &--main
+      margin: 0
+      padding: 0
+      +flex-justify(center)
+      width: 100%
+      text-align: center
   &--light
     color: #fff
     &:after
@@ -39,7 +44,6 @@
       display: block
       content: ''
       margin-top: 25px
-      margin-bottom: 40px
       width: 100%
       padding: 2px      
       background: url('')
@@ -54,6 +58,11 @@
       padding: 2px
       background: url('')
       background-size: 100% 100%
+  &--post
+    margin-top: 40px
+    margin-bottom: 10px
+    +text-size-family-color-weight(16px, $secondary-font, #3e3d3d, 700)
+    text-transform: uppercase
   @media screen and (max-width: 900px)
     &-desc
       font-size: $mobile-font-size
@@ -71,6 +80,9 @@
       &:after
         margin-top: 20px
         margin-bottom: 20px
+    &--post
+      font-size: 14px
+      font-weight: 600
     &--main-page
       &:before
         margin-bottom: 20px

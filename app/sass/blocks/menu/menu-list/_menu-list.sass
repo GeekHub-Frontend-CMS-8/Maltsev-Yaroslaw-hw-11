@@ -6,13 +6,27 @@ $menu-open-shadow: rgba(0, 0, 0, .5)
     padding-left: 0
     +flex-justify-align(space-around, flex-start)
     width: 100% 
-    list-style-type: none  
+    list-style-type: none
+    &--hovered
+      padding: 0
+      +flex-justify-align-flow(center, flex-start, column nowrap)
+      &:hover
+        .menu-list__item
+          &--hovered
+            background: #3e3d3d
+          &--popup
+            position: fixed
+            z-index: 15
+            .menu-list__item
+              background: #3e3d3d
+      .menu-list__item
+        &--popup
+          position: absolute
+          margin-top: 88px
+          z-index: -1
   &__item
     text-align: center
     padding: 20px 10px
-    //border-radius: 0 0 10px 10px
-    &:last-child 
-      margin-right: 0
     &:hover
       cursor: pointer
       transition: 0.5s
@@ -33,7 +47,7 @@ $menu-open-shadow: rgba(0, 0, 0, .5)
 @media screen and (max-width: 992px) 
   .menu-list 
     position: fixed
-    padding: 100px 0 0
+    padding: 50px 0 0
     top: 0
     bottom: 0
     right: 0
@@ -76,14 +90,30 @@ $menu-open-shadow: rgba(0, 0, 0, .5)
       margin-top: 0
       text-align: center
       flex-direction: column
+      &--hovered
+        width: 100%
+        padding: 0
+        margin: 0
+        &:hover
+          .menu-list__item--popup
+            position: static
+            z-index: 50
+            margin: 0
+            width: 100%
+            .menu-list__item
+              padding-left: 100px
+
     &__item 
+      width: 100%
       display: block
       opacity: 1
       padding: 0
-      width: 100%
       text-align: left
       &:hover
         border-radius: 0
+      &--popup
+        position: fixed
+        right: -100px
     &__link 
       display: block
       width: 100%
@@ -105,3 +135,4 @@ $menu-open-shadow: rgba(0, 0, 0, .5)
     100% 
       opacity: 1
       left: 0
+
